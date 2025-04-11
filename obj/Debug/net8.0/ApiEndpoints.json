@@ -1,0 +1,350 @@
+[
+  {
+    "ContainingType": "prueba_base.Controllers.AsientoDiarioDetallesController",
+    "Method": "GetAsientoDiarioDetalles",
+    "RelativePath": "api/AsientoDiarioDetalles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[prueba_base.Models.AsientoDiarioDetalle, prueba-base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "prueba_base.Controllers.AsientoDiarioDetallesController",
+    "Method": "PostAsientoDiarioDetalle",
+    "RelativePath": "api/AsientoDiarioDetalles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "asientoDiarioDetalle",
+        "Type": "prueba_base.Models.AsientoDiarioDetalle",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "prueba_base.Models.AsientoDiarioDetalle",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "prueba_base.Controllers.AsientoDiarioDetallesController",
+    "Method": "GetAsientoDiarioDetalle",
+    "RelativePath": "api/AsientoDiarioDetalles/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "prueba_base.Dtos.AsientoDiarioCliente",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "prueba_base.Controllers.AsientoDiarioDetallesController",
+    "Method": "PutAsientoDiarioDetalle",
+    "RelativePath": "api/AsientoDiarioDetalles/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "asientoDiarioDetalle",
+        "Type": "prueba_base.Models.AsientoDiarioDetalle",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "prueba_base.Controllers.AsientoDiarioDetallesController",
+    "Method": "DeleteAsientoDiarioDetalle",
+    "RelativePath": "api/AsientoDiarioDetalles/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "prueba_base.Controllers.ComprobantesController",
+    "Method": "GetComprobante",
+    "RelativePath": "api/Comprobantes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[prueba_base.Models.Comprobante, prueba-base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "prueba_base.Controllers.ComprobantesController",
+    "Method": "PostComprobante",
+    "RelativePath": "api/Comprobantes",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "comprobante",
+        "Type": "prueba_base.Models.Comprobante",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "prueba_base.Models.Comprobante",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "prueba_base.Controllers.ComprobantesController",
+    "Method": "GetComprobante",
+    "RelativePath": "api/Comprobantes/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "prueba_base.Models.Comprobante",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "prueba_base.Controllers.ComprobantesController",
+    "Method": "PutComprobante",
+    "RelativePath": "api/Comprobantes/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "comprobante",
+        "Type": "prueba_base.Models.Comprobante",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "prueba_base.Controllers.ComprobantesController",
+    "Method": "DeleteComprobante",
+    "RelativePath": "api/Comprobantes/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "prueba_base.Controllers.OrdenCompraDetallesController",
+    "Method": "GetOrdenCompraDetalle",
+    "RelativePath": "api/OrdenCompraDetalles",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[prueba_base.Models.OrdenCompraDetalle, prueba-base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "prueba_base.Controllers.OrdenCompraDetallesController",
+    "Method": "PostOrdenCompraDetalle",
+    "RelativePath": "api/OrdenCompraDetalles",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "ordenCompraDetalle",
+        "Type": "prueba_base.Models.OrdenCompraDetalle",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "prueba_base.Models.OrdenCompraDetalle",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "prueba_base.Controllers.OrdenCompraDetallesController",
+    "Method": "GetOrdenCompraDetalle",
+    "RelativePath": "api/OrdenCompraDetalles/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "prueba_base.Models.OrdenCompraDetalle",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "prueba_base.Controllers.OrdenCompraDetallesController",
+    "Method": "PutOrdenCompraDetalle",
+    "RelativePath": "api/OrdenCompraDetalles/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "ordenCompraDetalle",
+        "Type": "prueba_base.Models.OrdenCompraDetalle",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "prueba_base.Controllers.OrdenCompraDetallesController",
+    "Method": "DeleteOrdenCompraDetalle",
+    "RelativePath": "api/OrdenCompraDetalles/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "prueba_base.Controllers.WeatherForecastController",
+    "Method": "Get",
+    "RelativePath": "WeatherForecast",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[prueba_base.WeatherForecast, prueba-base, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ],
+    "EndpointName": "GetWeatherForecast"
+  }
+]

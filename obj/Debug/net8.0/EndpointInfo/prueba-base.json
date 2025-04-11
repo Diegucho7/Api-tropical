@@ -1,0 +1,1055 @@
+{
+  "openapi": "3.0.4",
+  "info": {
+    "title": "prueba-base",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/AsientoDiarioDetalles": {
+      "get": {
+        "tags": [
+          "AsientoDiarioDetalles"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AsientoDiarioDetalle"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AsientoDiarioDetalle"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/AsientoDiarioDetalle"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "AsientoDiarioDetalles"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AsientoDiarioDetalle"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AsientoDiarioDetalle"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AsientoDiarioDetalle"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AsientoDiarioDetalle"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AsientoDiarioDetalle"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AsientoDiarioDetalle"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/AsientoDiarioDetalles/{id}": {
+      "get": {
+        "tags": [
+          "AsientoDiarioDetalles"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/AsientoDiarioCliente"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AsientoDiarioCliente"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/AsientoDiarioCliente"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "AsientoDiarioDetalles"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AsientoDiarioDetalle"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AsientoDiarioDetalle"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AsientoDiarioDetalle"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "AsientoDiarioDetalles"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Comprobantes": {
+      "get": {
+        "tags": [
+          "Comprobantes"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Comprobante"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Comprobante"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Comprobante"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Comprobantes"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Comprobante"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Comprobante"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Comprobante"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Comprobante"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Comprobante"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Comprobante"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Comprobantes/{id}": {
+      "get": {
+        "tags": [
+          "Comprobantes"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/Comprobante"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Comprobante"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/Comprobante"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Comprobantes"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Comprobante"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Comprobante"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Comprobante"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Comprobantes"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/OrdenCompraDetalles": {
+      "get": {
+        "tags": [
+          "OrdenCompraDetalles"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/OrdenCompraDetalle"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/OrdenCompraDetalle"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/OrdenCompraDetalle"
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "OrdenCompraDetalles"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrdenCompraDetalle"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrdenCompraDetalle"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrdenCompraDetalle"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrdenCompraDetalle"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrdenCompraDetalle"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrdenCompraDetalle"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/OrdenCompraDetalles/{id}": {
+      "get": {
+        "tags": [
+          "OrdenCompraDetalles"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrdenCompraDetalle"
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrdenCompraDetalle"
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/OrdenCompraDetalle"
+                }
+              }
+            }
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "OrdenCompraDetalles"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrdenCompraDetalle"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrdenCompraDetalle"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/OrdenCompraDetalle"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "OrdenCompraDetalles"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "AsientoDiarioCliente": {
+        "type": "object",
+        "properties": {
+          "codigoPrincipal": {
+            "type": "string",
+            "nullable": true
+          },
+          "dFxRegistro": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "cDsObservacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "cCiUsuario": {
+            "type": "string",
+            "nullable": true
+          },
+          "dFxUsuario": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "cSnTipo": {
+            "type": "string",
+            "nullable": true
+          },
+          "codigoAnulacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "cDsMotivoAnulacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "cCiCuentaContable": {
+            "type": "string",
+            "nullable": true
+          },
+          "cCiCentroCosto": {
+            "type": "string",
+            "nullable": true
+          },
+          "cCiTipoPiscina": {
+            "type": "string",
+            "nullable": true
+          },
+          "cNuPiscina": {
+            "type": "string",
+            "nullable": true
+          },
+          "nNuDebe": {
+            "type": "number",
+            "format": "double"
+          },
+          "nNuHaber": {
+            "type": "number",
+            "format": "double"
+          },
+          "cDsDetalle": {
+            "type": "string",
+            "nullable": true
+          },
+          "cCeProceso": {
+            "type": "boolean"
+          },
+          "cNoError": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AsientoDiarioDetalle": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_asientoDiario": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "id_cuenta": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "nombreCuenta": {
+            "type": "string",
+            "nullable": true
+          },
+          "id_centroCosto": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "nombreCentroCosto": {
+            "type": "string",
+            "nullable": true
+          },
+          "id_CargoOperacional": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "nombreCargoOperacional": {
+            "type": "string",
+            "nullable": true
+          },
+          "debito": {
+            "type": "number",
+            "format": "double"
+          },
+          "credito": {
+            "type": "number",
+            "format": "double"
+          },
+          "saldoCuenta": {
+            "type": "number",
+            "format": "double"
+          },
+          "referencia": {
+            "type": "string",
+            "nullable": true
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "id_tipoRegistroContable": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Comprobante": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_puntoEmision": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_tipoComprobante": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "id_comprobanteOrigen": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "fechaCreacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaEmision": {
+            "type": "string",
+            "nullable": true
+          },
+          "fechaEmisionDT": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "numeroSerie": {
+            "type": "string",
+            "nullable": true
+          },
+          "secuencial": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "numeroComprobante": {
+            "type": "string",
+            "nullable": true
+          },
+          "referencia": {
+            "type": "string",
+            "nullable": true
+          },
+          "observacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "generadoAutomatico": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "id_estado": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "id_estadoTransicion": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "id_usuarioCreacion": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "audCreaFecha": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "id_usuarioModificacion": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "audModificaFecha": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "id_usuarioAsentar": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "audAsentaFecha": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "id_usuarioReversar": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "audReverseFecha": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "id_usuarioAnular": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "audAnulaFecha": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "temperatura": {
+            "type": "string",
+            "nullable": true
+          },
+          "id_rubro": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "OrdenCompraDetalle": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "id_orden": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "id_item": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "id_solicitudDetalle": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "id_solicitud": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "id_unidadMedidaCompra": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "cantidadAComprar": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "cantidadAprobada": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "precioCompra": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "baseImponible": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "porcientoDescuento": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "valorDescuento": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "subTotalBruto": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "iva": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "porcientoIva": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "valorIva": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "ice": {
+            "type": "boolean",
+            "nullable": true
+          },
+          "porcientoIce": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "valorIce": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "subTotalNeto": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "cantidadRecibida": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "cantidadPendiente": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "cantidadDespacho": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "pendienteDespacho": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
+          },
+          "observacion": {
+            "type": "string",
+            "nullable": true
+          },
+          "id_centroCosto": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "id_cargoOperacional": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "fechaProduccion": {
+            "type": "string",
+            "format": "date-time",
+            "nullable": true
+          },
+          "fechaHoraProduccion": {
+            "type": "string",
+            "nullable": true
+          },
+          "unidadProduccion": {
+            "type": "string",
+            "nullable": true
+          },
+          "id_tipoProceso": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}
